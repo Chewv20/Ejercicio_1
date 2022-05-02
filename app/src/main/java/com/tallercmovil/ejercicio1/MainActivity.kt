@@ -1,5 +1,6 @@
 package com.tallercmovil.ejercicio1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -26,9 +27,23 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     fun click(view: View) {
+        val intent = Intent(this,MainActivity2::class.java)
+        val parametros = Bundle()
+        var resultado = 0.0
         with(binding){
+            val seleccion = spinner.selectedItemPosition
 
+            if(seleccion==0){
+                resultado = distancia(etValor1.toString().toInt(),etValor2.toString().toInt(),etValor3.toString().toInt(),etValor4.toString().toInt())
+            }else if(seleccion == 1){
+                resultado = gravedad(etValor1.toString().toInt(),etValor2.toString().toInt(),etValor3.toString().toInt(),etValor4.toString().toInt())
+            }else{
+                resultado = triangulo(etValor1.toString().toInt(),etValor2.toString().toInt())
+            }
         }
+        parametros.putString("Resultado",resultado.toString())
+
+        startActivity(intent)
     }
 
     fun distancia(x1: Int, x2: Int, y1: Int,y2: Int): Double{
@@ -92,3 +107,5 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         TODO("Not yet implemented")
     }
 }
+
+

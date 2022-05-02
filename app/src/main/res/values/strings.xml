@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio 1</string>
+    <string name="creador">Jesús Arturo Vázquez Zaragoza</string>
+    <string name="version">Versión: 1.0</string>
+    <string name="logoapp">logoApp</string>
+
+</resources>

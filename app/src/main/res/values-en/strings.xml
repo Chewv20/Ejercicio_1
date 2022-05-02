@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ejercicio 1</string>
+    <string name="creador">Jesus Arturo Vazquez Zaragoza</string>
+    <string name="version">Version 1.0</string>
+    <string name="logoapp">logoApp</string>
+</resources>

@@ -49,7 +49,32 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-        TODO("Not yet implemented")
+        with(binding){
+            when(p2){
+                0->{
+                    etValor1.hint = getString(R.string.x1)
+                    etValor2.hint = getString(R.string.x2)
+                    etValor3.hint = getString(R.string.y1)
+                    etValor4.hint = getString(R.string.y2)
+                    etValor3.visibility = View.VISIBLE
+                    etValor4.visibility = View.VISIBLE
+                }
+                1->{
+                    etValor1.hint = getString(R.string.m1)
+                    etValor2.hint = getString(R.string.m2)
+                    etValor3.hint = getString(R.string.G)
+                    etValor4.hint = getString(R.string.r)
+                    etValor3.visibility = View.VISIBLE
+                    etValor4.visibility = View.VISIBLE
+                }
+                2->{
+                    etValor1.hint = getString(R.string.base)
+                    etValor2.hint = getString(R.string.altura)
+                    etValor3.visibility = View.INVISIBLE
+                    etValor4.visibility = View.INVISIBLE
+                }
+            }
+        }
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {

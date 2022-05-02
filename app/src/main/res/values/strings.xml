@@ -17,6 +17,16 @@
     <string name="hint2">Valor 2</string>
     <string name="hint3">Valor 3</string>
     <string name="hint4">Valor 4</string>
+    <string name="x1">x1</string>
+    <string name="x2">x2</string>
+    <string name="y1">y1</string>
+    <string name="y2">y2</string>
+    <string name="m1">m1</string>
+    <string name="m2">m2</string>
+    <string name="G">G</string>
+    <string name="r">r</string>
+    <string name="base">b</string>
+    <string name="altura">h</string>
 
 
 </resources>

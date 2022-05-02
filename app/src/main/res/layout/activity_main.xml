@@ -24,6 +24,7 @@
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="@string/selectFormula"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -35,25 +36,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.924" />
 
-    <ImageView
-        android:id="@+id/imageFormula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/imagen_formula"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="ImageContrastCheck" />
-
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="251dp"
         android:layout_height="83dp"
         android:backgroundTint="@color/design_default_color_error"
+        android:fontFamily="casual"
         android:onClick="click"
         android:text="@string/calcular"
         android:textAlignment="center"
@@ -72,15 +60,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="284dp"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="@string/hint1"
+        android:importantForAutofill="no"
         android:inputType="number"
+        android:textColorHint="#37474F"
         app:layout_constraintBottom_toTopOf="@+id/etValor2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etValor2"
@@ -88,46 +78,90 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="340dp"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="@string/hint2"
+        android:importantForAutofill="no"
         android:inputType="number"
+        android:textColorHint="#37474F"
         app:layout_constraintBottom_toTopOf="@+id/etValor3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etValor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="@string/hint3"
+        android:importantForAutofill="no"
         android:inputType="number"
+        android:textColorHint="#37474F"
         app:layout_constraintBottom_toTopOf="@+id/etValor4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etValor4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="casual"
         android:hint="@string/hint4"
+        android:importantForAutofill="no"
         android:inputType="number"
+        android:textColorHint="#7B1FA2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.654"
-        tools:ignore="TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageDistancia"
+        android:layout_width="265dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/imageDistancia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/distancia" />
+
+    <ImageView
+        android:id="@+id/imageGravedad"
+        android:layout_width="238dp"
+        android:layout_height="88dp"
+        android:contentDescription="@string/imageGravedad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/gravedad" />
+
+    <ImageView
+        android:id="@+id/imageArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageArea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/area" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

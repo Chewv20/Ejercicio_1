@@ -28,5 +28,8 @@
     <string name="r">r</string>
     <string name="base">b</string>
     <string name="altura">h</string>
+    <string name="imageArea">Triangle area</string>
+    <string name="imageGravedad">Gravity</string>
+    <string name="imageDistancia">Distance</string>
 
 </resources>

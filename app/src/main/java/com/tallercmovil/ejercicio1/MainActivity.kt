@@ -26,7 +26,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     fun click(view: View) {
+        with(binding){
 
+        }
     }
 
     fun distancia(x1: Int, x2: Int, y1: Int,y2: Int): Double{
@@ -58,6 +60,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     etValor4.hint = getString(R.string.y2)
                     etValor3.visibility = View.VISIBLE
                     etValor4.visibility = View.VISIBLE
+                    imageDistancia.visibility = View.VISIBLE
+                    imageGravedad.visibility = View.INVISIBLE
+                    imageArea.visibility = View.INVISIBLE
                 }
                 1->{
                     etValor1.hint = getString(R.string.m1)
@@ -66,12 +71,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     etValor4.hint = getString(R.string.r)
                     etValor3.visibility = View.VISIBLE
                     etValor4.visibility = View.VISIBLE
+                    imageDistancia.visibility = View.INVISIBLE
+                    imageGravedad.visibility = View.VISIBLE
+                    imageArea.visibility = View.INVISIBLE
                 }
                 2->{
                     etValor1.hint = getString(R.string.base)
                     etValor2.hint = getString(R.string.altura)
                     etValor3.visibility = View.INVISIBLE
                     etValor4.visibility = View.INVISIBLE
+                    imageDistancia.visibility = View.INVISIBLE
+                    imageGravedad.visibility = View.INVISIBLE
+                    imageArea.visibility = View.VISIBLE
                 }
             }
         }

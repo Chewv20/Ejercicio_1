@@ -4,4 +4,19 @@
     <string name="creador">Jesus Arturo Vazquez Zaragoza</string>
     <string name="version">Version 1.0</string>
     <string name="logoapp">logoApp</string>
+    <string name="selectFormula">Select a formula</string>
+    <string name="calcular">Calculate</string>
+    <string name="imagen_formula">Image Formula</string>
+    <string-array name="Formulas">
+        <item>Distance between two points</item>
+        <item>Force of gravity</item>
+        <item>Triangle area</item>
+    </string-array>
+    <string name="content_spinner">Options</string>
+    <string name="valor_requerido">Value is required</string>
+    <string name="hint1">Value 1</string>
+    <string name="hint2">Value 2</string>
+    <string name="hint3">Value 3</string>
+    <string name="hint4">Value 4</string>
+
 </resources>

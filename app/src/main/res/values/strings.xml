@@ -3,5 +3,20 @@
     <string name="creador">Jesús Arturo Vázquez Zaragoza</string>
     <string name="version">Versión: 1.0</string>
     <string name="logoapp">logoApp</string>
+    <string name="selectFormula">Selecciona una fórmula</string>
+    <string name="calcular">Calcular</string>
+    <string name="imagen_formula">Imagen Formula</string>
+    <string-array name="Formulas">
+        <item>Distancia entre dos Puntos</item>
+        <item>Fuerza de gravedad</item>
+        <item>Área triángulo</item>
+    </string-array>
+    <string name="content_spinner">Opciones</string>
+    <string name="valor_requerido">Se requiere un valor</string>
+    <string name="hint1">Valor 1</string>
+    <string name="hint2">Valor 2</string>
+    <string name="hint3">Valor 3</string>
+    <string name="hint4">Valor 4</string>
+
 
 </resources>
